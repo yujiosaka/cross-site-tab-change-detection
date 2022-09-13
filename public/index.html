@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Cross site tab change detection demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <script src="client.js"></script>
+  </head>
+  <body>
+    <h1>Cross site tab change detection demo</h1>
+
+    <section>
+      <h2>BroadcastChannel</h2>
+      <div>
+        <input type="radio" id="channel-from-same-site" disabled />
+        <label for="channel-from-same-site">
+          The tab was switched from the same site
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="channel-not-from-same-site" disabled />
+        <label for="channel-not-from-same-site">
+          The tab became visible and it was not switched from the same site
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2>SharedWorker</h2>
+      <div>
+        <input type="radio" id="worker-from-same-site" disabled />
+        <label for="worker-from-same-site">
+          The tab was switched from the same site
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="worker-not-from-same-site" disabled />
+        <label for="worker-not-from-same-site">
+          The tab became visible and it was not switched from the same site
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2>LocalStorage</h2>
+      <div>
+        <input type="radio" id="storage-from-same-site" disabled />
+        <label for="storage-from-same-site">
+          The tab was switched from the same site
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="storage-not-from-same-site" disabled />
+        <label for="storage-not-from-same-site">
+          The tab became visible and it was not switched from the same site
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2>WebSocket (SocketIO)</h2>
+      <div>
+        <input type="radio" id="websocket-from-same-site" disabled />
+        <label for="websocket-from-same-site">
+          The tab was switched from the same site
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="websocket-not-from-same-site" disabled />
+        <label for="websocket-not-from-same-site">
+          The tab became visible and it was not switched from the same site
+        </label>
+      </div>
+    </section>
+  </body>
+</html>
